@@ -8,6 +8,16 @@ colnames(facebook) <- c("total likes", "Type", "category", "month", "Weekday", "
                         "like",                                                               
                         "share",                                                              
                         "Total.Interactions")
+if (!require(GGally))
+{
+  install.packages("GGally")
+}
+
+if (!require(plotly))
+{
+  install.packages("plotly")
+}
+
 library(shiny)
 library(ggplot2)
 library(plotly)
